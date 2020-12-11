@@ -1,0 +1,26 @@
+Exercise 2.1:
+=============
+Lisp expression that yields t if 2**(3**4) fits into a 64-bit integer:
+(and (< (expt 2 (expt 3 4)) (expt 2 63)) (> (expt 2 (expt 3 4)) (- (expt 2 63))))
+
+Result of searching for commands in C-h b:
+C-h k: describe-key
+M-SPC: just-one-space
+
+Running commands:
+C-h k C-h k: describes the command C-h k. It does this because C-h k is the describe
+      	     command command and it describes whatever comes after, which happens to
+	     be the descibe command key haha.
+C-h k M-SPC: describes the command M-SPC: Delete all spaces and tabs around point,
+      	     leaving one space (or N spaces). If N is negative, delete newlines as
+	     well, leaving -N spaces.
+
+	     The actual file's function definition looks like this:
+	     defun just-one-space (&optional n)
+	     You can execute this using (just-one-space n) in M-:
+
+Python Scripting:
+=================
+When my shuf.py is invoked in Python 2 instead of Python 3, nothing happens.
+This is because my code works across both languages!! If I tried using something that
+Python 2 did not have, it would probably give me a syntax error.
